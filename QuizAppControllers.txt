@@ -1,0 +1,31 @@
+Question Controller
+=========================================================================================
+
+
+http://localhost:7070/question/allQuestions   ----@GetMapping ---all questions
+
+
+http://localhost:7070/question/category/{category}   --- @GetMapping, @PathVariable --- question by category
+
+ 
+http://localhost:7070/question/addQuestion   --- @PostMapping, @RequestBody --- add question
+
+
+http://localhost:7070/question/delete/{id}   --- @DeleteMapping, @PathVariable --- delete question
+
+=========================================================================================
+Quiz Controller
+=========================================================================================
+
+
+http://localhost:7070/quiz/create?category=Rivers&numQ=2&title=DQuiz&id=6   --- @PostMapping, @RequestParam --create quiz
+
+
+http://localhost:7070/quiz/get/{id}  --- @GetMapping, @PathVariable --get quiz questions
+
+
+http://localhost:7070/quiz/submit/{id}  --- @PostMapping, @RequestBody, @PathVariable ---calculate score
+
+
+
+
